@@ -1,0 +1,25 @@
+LSTM:
+    units > 0
+    activation="tanh"(dla użycia z GPU): relu, sigmoid, linear, softmax, softplus, softsign, selu, elu, exponential, None
+    recurrent_activation="sigmoid",
+    use_bias=True,
+    kernel_initializer="glorot_uniform": RandomNormal , RandomUniform, TruncatedNormal , Zeros, Ones , GlorotNormal Identity Orthogonal Constant VarianceScaling 
+    recurrent_initializer="orthogonal": "glorot_uniform": RandomNormal , RandomUniform, TruncatedNormal , Zeros, Ones , GlorotNormal Identity Orthogonal Constant VarianceScaling 
+    bias_initializer="zeros":"glorot_uniform": RandomNormal , RandomUniform, TruncatedNormal , Zeros, Ones , GlorotNormal Identity Orthogonal Constant VarianceScaling 
+    unit_forget_bias=True,
+    kernel_regularizer=None: L1 L2 l1_l2 
+    recurrent_regularizer=None: L1 L2 l1_l2 
+    bias_regularizer=None: L1 L2 l1_l2 
+    activity_regularizer=None: L1 L2 l1_l2 
+    kernel_constraint=None: MaxNorm MinMaxNorm NonNeg UnitNorm RadialConstraint 
+    recurrent_constraint=None: MaxNorm MinMaxNorm NonNeg UnitNorm RadialConstraint 
+    bias_constraint=None: MaxNorm MinMaxNorm NonNeg UnitNorm RadialConstraint 
+    dropout=0.0: 0<x<1
+    recurrent_dropout=0.0,
+    return_sequences=False,
+    return_state=False,
+    go_backwards=False,
+    stateful=False,
+    time_major=False,
+    unroll=False,
+    **kwargs
